@@ -1,6 +1,6 @@
 ---
 layout: post
-title: We don't need no eduction? Die Skills der Beschäftigten von morgen 
+title: We don't need no education? Die Skills der Beschäftigten von morgen 
 cover-img: /assets/img/pink floyd.jpg
 tags: [data, education]
 ---
