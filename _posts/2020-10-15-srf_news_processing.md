@@ -9,6 +9,10 @@ While having no clue about a global pandemic about to start just 6 months later 
 
 Title Image by: <span>Photo by <a href="https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raphael Schaller</a> on <a href="https://unsplash.com/s/photos/words?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
+
+![covid](/assets/img/srf.jpg)
+<span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> 
+
 ## The Crawler
 
 The crawler project is build on very basic R scripts and executed once a day by windows task manager. The tokenization, text processing and visualization are based on pandas, nltk and matplotlib.
@@ -36,8 +40,6 @@ links_frame <- as.data.frame(links) %>% mutate(links=as.character(links)) %>% mu
 
 links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links")
 ```
-
-<span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> ![covid](/assets/img/srf.jpg)
 
 ## The Processing
 
