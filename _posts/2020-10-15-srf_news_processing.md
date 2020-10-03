@@ -110,4 +110,4 @@ ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.2),
 ax
 ```
 
-![plot](/assets/img/srf_news.png)
+![plot](/assets/img/srf_news.jpg)
