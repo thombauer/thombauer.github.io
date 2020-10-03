@@ -37,8 +37,7 @@ links_frame <- as.data.frame(links) %>% mutate(links=as.character(links)) %>% mu
 links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links")
 ```
 
-<span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> ![covid]
-(/assets/img/srf.jpg)
+<span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> ![covid](/assets/img/srf.jpg)
 
 ## The Processing
 
@@ -111,4 +110,4 @@ ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.2),
 ax
 ```
 
-![plot] (/assets/img/srf_news.png)
+![plot](/assets/img/srf_news.png)
