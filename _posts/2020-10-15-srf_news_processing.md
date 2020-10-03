@@ -1,9 +1,10 @@
-layout	title	cover-img	tags
-post
-News Headlines during Corona Pandemic. Crawling and Processing of Swiss Media Headlines 2019-2020
-/assets/img/pink floyd.jpg
-data
-education
+---
+layout: post
+title: News Headlines during Corona Pandemic. Crawling and Processing of Swiss Media Headlines 2019-2020 
+cover-img: /assets/img/srf.jpg
+tags: [data, news, corona, pandemic, swiss]
+---
+Title Image by: <span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 While having no clue about a global pandemic about to start just 6 months later I started to build a web crawler on srf.ch news headlines. Initially I was curious about the topics srf.ch is about to post every day, so I decided to save the headlines and see what I can process and visualize after a year. Then covid-19 came and dominated news rapidly, what we will see in the final plots of this blog post.
 
