@@ -41,6 +41,9 @@ links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links
 
 ## The Processing
 
+After running the short R script from above you have all the news headlines from srf.ch. You can store them in a format you like, build an automatic script run in a tool you prefer and add one datafram after another day by day to build up a collection of news data. I choose windows taskmanager but there are serveral tools for all platforms.
+A year after I started the crawling process I was wondering, what I could learn from the data collected. This year I'm focussing on Python, so for processing and visualizing the data I hit the switch from R to Python. As mentioned above the code is very simple, you can easyly switch back and perform all transformation and plotting in R if you like. First thing to do after importing some packages is to read the crawled data so that you have everything ready in pandas dataframe.
+
 ```python
 import pandas as pd
 import sys
@@ -53,6 +56,10 @@ import matplotlib.pyplot as plt
 df_covid_stats = pd.read_csv('srf_data_all.csv')
 df=df_covid_stats[['links','date']].copy()
 
+```
+Next thing is tokenization and exploding tokens to have deep data. Afterwards I eliminate german stop words and build a list to remove some trash from my tokens.
+
+```python
 # tokenize data
 df['links']=df['links'].str.replace('-', ' ', regex=True)
 df['tokenized_sents'] = df.apply(lambda row: nltk.word_tokenize(row['links'], language='german'), axis=1)
@@ -71,7 +78,10 @@ df_deep=df_deep[~df_deep.tokenized_sents.str.contains('|'.join(searchfor), regex
 # final data prep
 df_deep = pd.merge(df_deep, df, left_index=True, right_index=True)
 df_deep=df_deep[['tokenized_sents_x','date_x']]
+```
+Last step for this easy to perform data processing is to filter for characteristic tokens like 'corona' or 'virus'. I generated the list from a value count, which is easy in this case, cause corona is dominating the dataset, all news headers and summed up tokens. 
 
+```python
 # corona data
 searchfor = ['corona', 'virus', 'sars','covid','pandemie']
 df_corona=df_deep[df_deep.tokenized_sents_x.str.contains('|'.join(searchfor), regex= True, na=False)]
@@ -82,10 +92,13 @@ df_corona['news']='corona'
 df_corona.rename(columns={'count':'corona'}, inplace=True)
 
 ```
+In the last part of this blog we use some matplotlib to see when srf news is jumping on the corona bandwagon. It's also interesting for how long corona news will dominate the timeline and what other important topics will appear. (It's NOT the economy stupid!) You can repeat the last step from above to include all the topics you can see in the plot below. 
 
 ## The Visualization
 
-```Python
+We imported matplotlib already, so we can start to build our time series plot. I limited the ticks and pushed the legend outside the box for design purposes. Last thing to do was to look up some interesting outliers and maximum values for all analyzed topics. I added annotation labels for all important events that we can see in peaks for every topic.
+
+```python
 plt.figure()
 plt.ylim(0, 100)
 
@@ -109,5 +122,12 @@ ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.2),
 
 ax
 ```
+As a result we can look at the plot below.
 
 ![plot](/assets/img/srf_news.jpg)
+
+Interesting is, that as a national news chanel SRF concentrated on national election for quite a long time. Brexit agreement and execution peaked but Brexit was no long term topic. You can see dominating direct democratic referendums in early 2020 and late 2020. Trump is a backround noise topic, peaking with black lives matter und the first presedential debate some days ago. Corona comes into play with the second Chinese dying from the desease in late January 2020. After that it dominated almost every day only topped by the very important referendum in September 2020.
+
+This Blog post showed a very easy way to crawl news data, to process and to visualize it. This can by adapted for any website and interest.
+
+***Thank you, and have a beautiful day!***
