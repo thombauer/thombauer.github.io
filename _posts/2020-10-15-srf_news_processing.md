@@ -1,6 +1,6 @@
 ---
 layout: post
-title: News Headlines during Corona Pandemic. Crawling and Processing of Swiss Media Headlines 2019-2020 
+title: Using R and Python for Crawling and Processing Data from News Headlines.  
 cover-img: /assets/img/srf_head.jpg
 tags: [data, news, corona, pandemic, swiss]
 ---
