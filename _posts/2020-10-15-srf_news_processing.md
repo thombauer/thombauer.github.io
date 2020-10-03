@@ -41,7 +41,7 @@ links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links
 
 ## The Processing
 
-```Python
+```python
 import pandas as pd
 import sys
 import nltk
