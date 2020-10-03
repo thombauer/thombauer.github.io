@@ -9,7 +9,7 @@ While having no clue about a global pandemic about to start just 6 months later 
 
 Title Image by: <span>Photo by <a href="https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raphael Schaller</a> on <a href="https://unsplash.com/s/photos/words?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-The Crawler
+## The Crawler
 
 The crawler project is build on very basic R scripts and executed once a day by windows task manager. The tokenization, text processing and visualization are based on pandas, nltk and matplotlib.
 First I want to share the inital crawler and how to get information from html pages on the web, in this case srf.ch. Schweizer Radio und Fernsehen SRF (English: Swiss Radio and Television) is a Swiss broadcasting company. The new business unit of SRG SSR, became the largest electronic media house of German-speaking Switzerland. About 2,150 employees work for SRF in the four main studios in Basel, Bern and Zürich. Thanks to fees, SRF works independently of economic or political interest groups. Journalistic quality has top priority. SRF cultivates diversity in its programming, which, wherever possible, takes a Swiss perspective. Fees enable a program for the entire society. This includes programs for the vast majority, but also offers for smaller groups. At SRF, children find their favorite formats as well as a mobile, web-savvy audience; the needs of older people are taken into account as well as the special needs of people with sensory disabilities. In this way, SRF serves the cohesion of society and mutual understanding.
@@ -20,6 +20,7 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+```R
 library(rvest)
 library(xml2)
 library(curl)
@@ -39,11 +40,14 @@ links <- matched[[1]][, 2]
 links_frame <- as.data.frame(links) %>% mutate(links=as.character(links)) %>% mutate(date=Sys.Date())
 
 links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links")
+```
 
 <span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 (/assets/img/srf.jpg)
 
-The Processing
+## The Processing
 
 
-The Visualization
+## The Visualization
+
+(/assets/img/srf_news.png)
