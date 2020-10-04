@@ -1,0 +1,8 @@
+---
+layout: post
+title: Visualize with Python and Dash. Free and easy to use Dashboards.  
+cover-img: /assets/img/dash.jpg
+tags: [data, python, dash]
+---
+
+Sometimes you want to present interactive visualizations but your favourite BI platform is not available in your organization or your data is to sensitive to publish it to Tableau Public. In this case you can use plotly based dash to build custom visualizations.
