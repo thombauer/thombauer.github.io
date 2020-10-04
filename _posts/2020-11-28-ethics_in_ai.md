@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Ethics in Data Science. Adressing underlying ethical issues in Machine Learning Models.
+title: Ethics in Data Science. Adressing ethical issues in Machine Learning Models.
 cover-img: /assets/img/dark_and_light.jpg
-tags: [data science, machine learning, ethics]
+tags: [data science, machine learning, ethics, philosophy]
 ---
+
+Innovation is driven by data and IT in almost every industry with data science influencing how business is done. Data science lacking ethical considerations like privacy protection, implicit bias or social impacts of automation is a dangerous weapon. I would like to wrap up the recent disussion and reflect some interesting philosophical statements on AI.
 
 Title image: <span>Photo by <a href="https://unsplash.com/@nguyendqnhu?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nhu Nguyen</a> on <a href="https://unsplash.com/s/photos/dark-and-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
@@ -14,6 +16,7 @@ Decisions of algorithms changing our lives in one or another direction have beco
 <span>Photo by <a href="https://unsplash.com/@cristian_newman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristian Newman</a> on <a href="https://unsplash.com/s/photos/dark-and-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 A growing number of small and medium companies using ml algorithms oblige on codes of ethics while data driven companies built up specific knowledge on ethical questions in data usage. These codes emphasis on end-to-end coordination of data related processes, data governance as management principle and the responsibility of data scienctist training ml models. They are designed to help with decision on different levels of involvement and stimulate discussions on etical questions when using data in a business model. (who doesn't?) 
+Most tend to define some guiding lines when working with data and machine learning algorithms. They proclaim transparency and convict incentive systems designed to gather as much information as possible. Data protection is requested, bias is to be avoided, comprehensibility is promoted and personal responsibility is reinforced. Guiding lines proclaim a right to appeal against the decision of an algorithm and request for the understanding and communication of model limitations. 
 
 ![matrix](/assets/img/matrix.jpg)
 <span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/algorithm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
