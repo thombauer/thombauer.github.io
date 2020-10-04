@@ -131,6 +131,6 @@ As a result we can look at the plot below.
 
 Interesting is, that as a national news chanel SRF concentrated on a national election for quite a long time. Brexit agreement and execution peaked but Brexit was no long term topic. Around the turn of the year none of the selected topic dominated, SRF is making news on several national and regional topics. This is something you would expect everytime apart voting seasons. This year even silly season was overtaken by the pandemic. You can see dominating direct democratic referendums in early 2020 and late 2020. Trump is a backround noise topic, peaking with black lives matter and the first presedential debate some days ago. Corona comes into play with the second Chinese dying from the disease in late January 2020. After that Corona dominated almost every day only topped by the very important referendum in September 2020. Let's see what's happening with the upcoming US election and a possible flare up of infection rates in the last quarter of 2020. This might lead to similar headline peaks we can see in April 2020.
 
-This Blog post showed a very easy way to crawl news data, to process and to visualize it. This can by adapted for any website and interest.
+This Blog post showed a very easy way to crawl news data, to process and to visualize it. This can be adapted for any website and interest.
 
 ***Thank you, and have a beautiful day!***
