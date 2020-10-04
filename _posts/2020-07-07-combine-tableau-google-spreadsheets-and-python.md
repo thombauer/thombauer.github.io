@@ -1,8 +1,10 @@
+---
 layout: post
 title: Get free automatically updating visualization. Combine Tableau Public, Google Spreadsheets and Python
 cover-img: /assets/img/fitness_tracker.jpg
 tags: [data science, fitness, sports]
 ---
+
 
 To find useful data for modeling metrics that really are part of my life, I decided to order the recordings from my Withings Steel HR smartwatch and to have a look what I'm able to do with the raw data. I'm sure you can download the data of your fitness tracker and depending on the format you get you will have to do some data preparation to get useful data.
 
