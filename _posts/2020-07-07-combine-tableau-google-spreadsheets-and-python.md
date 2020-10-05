@@ -50,15 +50,17 @@ df_day=df[['date','value']]
 df_day=df_day.groupby('date').sum()
 
 ```
-Last part is the date transformation to gather date and time and to derive weekday, month and day for upcoming data analysis. Although not the focus of this blog post, we can analyze the steps grouped by weekdays to see, if we on average are more active on mondays or in holidays compared to office days. That's the fun part of having raw data and the ability to build your on graphs and dashboards. Withings only shows you what they find is useful and interesting to you.
+Last part is the date transformation to gather date and time and to derive weekday, month and day for upcoming data analysis. Although not the focus of this blog post, we can analyze the steps grouped by weekdays to see, if we on average are more active on mondays or in holidays compared to office days. That's the fun part of having raw data and the ability to build your own graphs and dashboards. Withings only shows you what they find is useful and interesting to you.
 
 ![running](/assets/img/running.jpg)
 <span>Photo by <a href="https://unsplash.com/@bruno_nascimento?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bruno Nascimento</a> on <a href="https://unsplash.com/s/photos/running?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> 
 
 ## Google Spreadsheets
 
-Next step is all about Google Spreadsheets and the connection to Python and later Tableau Public. To be honest I had to cheat and follow a great step-by-step guide I found here: https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c. Since Tableau Public Public is able to connect to Google Spreadsheet as a Server data source and is able to update Tableau workbooks once a day Google Spreadsheet is despite all data protection consideration my top pick for a completely free updating workflow. In case of Google free means, that you pay with the data you upload, so please be careful with sensitive data. (Google still knows how much steps I make, same to Apple)
-You need a Google Account plus an empty spreadsheat you create on your account and we get started. As an introduction please read the beginning of the analytics vidhya post and follow all steps for authorization and configuration of your Google Account. In this blog I start with the workflow in Python, everythings to set up before is in the great step-by-step guide a recommend to read carefully.
+Next step is all about Google Spreadsheets and the connection to Python and later Tableau Public. To be honest I had to cheat and follow a great step-by-step guide I found here: [MEDIUM](https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c). Since Tableau Public Public is able to connect to Google Spreadsheet as a Server data source and is able to update Tableau workbooks once a day Google Spreadsheet is despite all data protection consideration my top pick for a completely free updating workflow. In case of Google free means, that you pay with the data you upload, so please be careful with sensitive data. (Google still knows how much steps I make, same to Apple)
+
+You need a Google Account plus an empty spreadsheat you create on your account and we get started. As an introduction please read the beginning of the analytics vidhya post and follow all steps for authorization and configuration of your Google Account. In this blog I start with the workflow in Python, everythings to set up before is in the great step-by-step guide on [MEDIUM](https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c) I recommend to read carefully.
+
 In the next code snippet don't forget to change 'SAMPLE_SPREADSHEET_ID_input' to the value of your newly created Google Spreadsheet (see analytics vidhya blog post).
 
 ```python
@@ -85,6 +87,7 @@ SAMPLE_SPREADSHEET_ID_input = 'AAAAAAAAAAAAAA-BBBBBBBBBBBBBBBBBB'
 ```
 
 We start with our 'df_day' that stores the steps I made and copy it to 'df_gold' (the name from analytics vidhya). The date field is gathered from the index, date has to be a string to be pickled to JSON.
+
 In the next code snippet don't forget to change the name of 'credentials.json'. This is the configuration JSON you hopefully downloaded from Google and saved in the same folder as your final Python script.
 ```python
 
@@ -142,8 +145,10 @@ Now all the data is saved to your Google Spreadsheet and ready to be connected w
 
 ## Tableau Public
 
-Tableau is a leading tool when it comes to Dashboarding and Visualization. I use it since 5 years, mainly to build market research dashboards but now I want to show you how to utilize Tableau Public to visualize data coming from Google Spreadsheets. Tableau Desktop (Public) is a free tool you download from https://public.tableau.com, add your own account and get started. As mentioned in the Google Spreadsheets section: same with Tableau Public. You pay with the data you upload to their platform, so be careful with sensitive data.
-When the installation process is finished and you have your free profile on https://public.tableau.com you can start to connect the Google Spreadsheet you built in the previous steps. You select connection to a server and then to Google Spreadsheets. In the dialog select your Google account and work your way thru to your saved Google Spreadsheets. When you successfully connected Tableau Desktop to your Google account you can select a Google Spreadsheet in the Tableau Desktop dialog.
+Tableau is a leading tool when it comes to Dashboarding and Visualization. I use it since 5 years, mainly to build market research dashboards but now I want to show you how to utilize Tableau Public to visualize data coming from Google Spreadsheets. Tableau Desktop (Public) is a free tool you download from [Tableau Public](https://public.tableau.com), add your own account and get started. As mentioned in the Google Spreadsheets section: same with Tableau Public. You pay with the data you upload to their platform, so be careful with sensitive data.
+
+When the installation process is finished and you have your free profile on [Tableau Public](https://public.tableau.com) you can start to connect the Google Spreadsheet you built in the previous steps. You select connection to a server and then to Google Spreadsheets. In the dialog select your Google account and work your way thru to your saved Google Spreadsheets. When you successfully connected Tableau Desktop to your Google account you can select a Google Spreadsheet in the Tableau Desktop dialog.
+
 Next is the configuration of the Visualization. For the purpose of this Blog I keep it simple, click on the date field and the value field and select an automatic timeline visualization. I add a trendline from the Analytics pane and an average with confidence interval. You can see, that my steps are increasing slightly during the measuring period, good work! I save my workbook and publish it to my Tableau Public Account. Google authorization is needed, the Tableau workbook is now connected with the Tableau Public Platform and with Google Spreadsheets as data source. Tableau Desktop opens the web browser, you can edit the name and properties of your published visualization and importantly select to update the data source once a day.
 
 ![Tableau](/assets/img/Tableau_steps.jpeg)
