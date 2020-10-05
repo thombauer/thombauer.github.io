@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get free automatically updating visualizations. Combine Tableau Public, Google Spreadsheets and Python
+title: Build free automatically updating visualizations. Combine Tableau Public, Google Spreadsheets and Python
 cover-img: /assets/img/fitness_tracker.jpg
 tags: [data science, fitness, sports]
 ---
