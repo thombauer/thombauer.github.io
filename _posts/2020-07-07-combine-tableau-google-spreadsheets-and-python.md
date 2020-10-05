@@ -61,7 +61,7 @@ Next step is all about Google Spreadsheets and the connection to Python and late
 
 You need a Google Account plus an empty spreadsheat you create on your account and we get started. As an introduction please read the beginning of the analytics vidhya post and follow all steps for authorization and configuration of your Google Account. In this blog I start with the workflow in Python, everythings to set up before is in the great step-by-step guide on [MEDIUM](https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c) I recommend to read carefully.
 
-In the next code snippet don't forget to change 'SAMPLE_SPREADSHEET_ID_input' to the value of your newly created Google Spreadsheet (see analytics vidhya blog post).
+In the next code snippet don't forget to change 'SAMPLE_SPREADSHEET_ID_input' to the value of your newly created Google Spreadsheet (see [MEDIUM](https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c)).
 
 ```python
 import pandas as pd
@@ -88,7 +88,7 @@ SAMPLE_SPREADSHEET_ID_input = 'AAAAAAAAAAAAAA-BBBBBBBBBBBBBBBBBB'
 
 We start with our 'df_day' that stores the steps I made and copy it to 'df_gold' (the name from analytics vidhya). The date field is gathered from the index, date has to be a string to be pickled to JSON.
 
-In the next code snippet don't forget to change the name of 'credentials.json'. This is the configuration JSON you hopefully downloaded from Google and saved in the same folder as your final Python script.
+In the next code snippet don't forget to change the name of 'credentials.json'. This is the configuration JSON you hopefully downloaded from Google and saved in the same folder as your final Python script. Otherwise please walk through the instructions in [MEDIUM](https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c).
 ```python
 
 #change the range if needed
@@ -145,7 +145,7 @@ Now all the data is saved to your Google Spreadsheet and ready to be connected w
 
 ## Tableau Public
 
-Tableau is a leading tool when it comes to Dashboarding and Visualization. I use it since 5 years, mainly to build market research dashboards but now I want to show you how to utilize Tableau Public to visualize data coming from Google Spreadsheets. Tableau Desktop (Public) is a free tool you download from [Tableau Public](https://public.tableau.com), add your own account and get started. As mentioned in the Google Spreadsheets section: same with Tableau Public. You pay with the data you upload to their platform, so be careful with sensitive data.
+Tableau is a leading tool when it comes to Dashboarding and Visualization. I use it since 6 years, mainly to build market research dashboards but now I want to show you how to utilize Tableau Public to visualize data coming from Google Spreadsheets. Tableau Desktop (Public) is a free tool you download from [Tableau Public](https://public.tableau.com), add your own account and get started. As mentioned in the Google Spreadsheets section: same with Tableau Public. You pay with the data you upload to their platform, so be careful with sensitive data.
 
 When the installation process is finished and you have your free profile on [Tableau Public](https://public.tableau.com) you can start to connect the Google Spreadsheet you built in the previous steps. You select connection to a server and then to Google Spreadsheets. In the dialog select your Google account and work your way thru to your saved Google Spreadsheets. When you successfully connected Tableau Desktop to your Google account you can select a Google Spreadsheet in the Tableau Desktop dialog.
 
