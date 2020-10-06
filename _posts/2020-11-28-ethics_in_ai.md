@@ -18,7 +18,7 @@ Decisions of algorithms changing our lives in one or another direction have beco
 
 A growing number of small and medium companies using ml algorithms oblige on codes of ethics while data driven companies built up specific knowledge on ethical questions in data usage. These codes emphasis on end-to-end coordination of data related processes, data governance as management principle and the responsibility of data scientist training ml models. They are designed to help with decision on different levels of involvement and stimulate discussions on ethical questions when using data in a business model. (who doesn't?) 
 
-Most tend to define some guiding lines when working with data and machine learning algorithms. They proclaim transparency and convict incentive systems designed to gather as much information as possible. Data protection is requested, bias is to be avoided, comprehensibility is promoted and personal responsibility is reinforced. Guiding lines proclaim a right to appeal against the decision of an algorithm and request for the understanding and communication of model limitations. For Switzerland you can visit https://data-service-alliance.ch to work through the Ethical Code for Data-Based Business.
+Most tend to define some guiding lines when working with data and machine learning algorithms. They proclaim transparency and convict incentive systems designed to gather as much information as possible. Data protection is requested, bias is to be avoided, comprehensibility is promoted and personal responsibility is reinforced. Guiding lines proclaim a right to appeal against the decision of an algorithm and request for the understanding and communication of model limitations. For Switzerland you can visit [DATA SERVICE ALLIANCE](https://data-service-alliance.ch) to work through the Ethical Code for Data-Based Business.
 
 ![matrix](/assets/img/matrix.jpg)
 <span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/algorithm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
@@ -27,6 +27,6 @@ Philosopher Richard David Precht takes a slightly different position when thinki
 
 Interesting research is done by algorithmwatch.org, a non-profit organization with the goal of studying and classifying processes of algorithmic decision making that have social relevance - i.e. that either predict or predetermine human decisions, or make decisions automatically. The organization focusses on governmental algorithms but also on monitoring the Instagram algorithm.
 
-To dive much deeper into an important debate I recommend reading the interview with Richard David Precht in T3N61/2020, visit https://algorithmwatch.org and to participate in debates on ethical AI in your industry.
+To dive much deeper into an important debate I recommend reading the interview with Richard David Precht in T3N61/2020, visit [algorithmwatch](https://algorithmwatch.org) and to participate in debates on ethical AI in your industry.
 
 ***Thank you, and have a beautiful day!***
