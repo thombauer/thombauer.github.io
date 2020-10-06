@@ -18,6 +18,9 @@ Title Image by: <span>Photo by <a href="https://unsplash.com/@raphaelphotoch?utm
 The crawler project is build on very basic R scripts and executed once a day by windows task manager. The tokenization, text processing and visualization are based on pandas, nltk and matplotlib.
 First I want to share the inital crawler and how to get information from html pages on the web, in this case srf.ch. Schweizer Radio und Fernsehen SRF (English: Swiss Radio and Television) is a Swiss broadcasting company. The new business unit of SRG SSR, became the largest electronic media house of German-speaking Switzerland. About 2,150 employees work for SRF in the four main studios in Basel, Bern and Zürich. Thanks to fees, SRF works independently of economic or political interest groups. Journalistic quality has top priority. In this way, SRF serves the cohesion of society and mutual understanding.
 
+When you have a look on the underlying html structure of the website you decide which elements you wish to extract. I'm focussing on the href property of the hyperlinks to extract the headlines. 
+
+![data_input](/assets/img/crawling_srf/website_input.jpg)
 
 ```R
 library(rvest)
