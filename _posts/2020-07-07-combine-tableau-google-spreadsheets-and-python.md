@@ -14,6 +14,11 @@ Title Image by: <span>Photo by <a href="https://unsplash.com/@chilinik?utm_sourc
 
 First I picked up the collection of the steps I made with my Withings Smartwatch from a csv-file Withings sent me. As I mentioned I have to process the data, what I want to show you in the first part of this blog. I hope this encourages you, to gain more insights from the data all the smart tools collect all day long.
 
+
+In case of Withings the sent csv of my steps recorded looked like this.
+
+![steps_raw](/assets/img/withings/steps_raw.jpg)
+
 ```python
 import pandas as pd
 import seaborn as sns
@@ -50,6 +55,9 @@ df_day=df[['date','value']]
 df_day=df_day.groupby('date').sum()
 
 ```
+After the transformations done your my data looks like this. The grouping is by day but with the information derived from the date you can also group by month or weekday.
+![steps_grouped](/assets/img/withings/steps_grouped.jpg)
+
 Last part is the date transformation to gather date and time and to derive weekday, month and day for upcoming data analysis. Although not the focus of this blog post, we can analyze the steps grouped by weekdays to see, if we on average are more active on mondays or in holidays compared to office days. That's the fun part of having raw data and the ability to build your own graphs and dashboards. Withings only shows you what they find is useful and interesting to you.
 
 ![running](/assets/img/running.jpg)
@@ -153,6 +161,8 @@ Next is the configuration of the Visualization. For the purpose of this Blog I k
 
 ![Tableau](/assets/img/Tableau_steps.jpeg)
 
-Now your done, the workbook published to your Tableau Public Account is updated from the underlying Google Spreadsheet, which is filled automatically by your Python Script from the steps above.
+Now your done, the workbook published to your Tableau Public Account is updated from the underlying Google Spreadsheet, which is filled automatically by your Python Script from the steps above. If you want to go further I encourage you to read my guide to simple webcrawling and simple text processing and to input the data from your crawler to the Google Spreadsheet and Tableau Public workflow. [Dashboards](https://thombauer.github.io/2020-07-07-combine-tableau-google-spreadsheets-and-python/).
+
+<iframe seamless frameborder="0" src="https://public.tableau.com/profile/ctrly#!/vizhome/Steps_Made/Blatt1:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>  
 
 ***Thank you, and have a beautiful day!***
