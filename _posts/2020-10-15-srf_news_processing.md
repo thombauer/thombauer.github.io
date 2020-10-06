@@ -40,7 +40,9 @@ links_frame <- as.data.frame(links) %>% mutate(links=as.character(links)) %>% mu
 
 links_news     <- grepl.sub(data = links_frame, pattern = "/news/", Var = "links")
 ```
+As a result you will get the news headlines crawled from srf.ch. The data will look like this and is ready to be processed.
 
+![data_input](/assets/img/crawling_srf/data_input.jpg)
 
 ## The Processing
 
@@ -95,6 +97,10 @@ df_corona['news']='corona'
 df_corona.rename(columns={'count':'corona'}, inplace=True)
 
 ```
+The resulting dataframe will look like this and is ready to be used for visualization.
+
+![data_output](/assets/img/crawling_srf/data_output.jpg)
+
 In the last part of this blog we use some matplotlib to see when srf news is jumping on the corona bandwagon. It's also interesting for how long corona news will dominate the timeline and what other important topics will appear. (It's NOT the economy, stupid!) You can repeat the last step from above to include all the topics you can see in the plot below. 
 
 ## The Visualization
