@@ -163,7 +163,7 @@ Next is the configuration of the Visualization. For the purpose of this Blog I k
 
 Now your done, the workbook published to your Tableau Public Account is updated from the underlying Google Spreadsheet, which is filled automatically by your Python Script from the steps above. If you want to go further I encourage you to read my guide to simple webcrawling and simple text processing and to input the data from your crawler to the Google Spreadsheet and Tableau Public workflow. [Dashboards](https://thombauer.github.io/2020-07-07-combine-tableau-google-spreadsheets-and-python/).
 
-<iframe seamless frameborder="0" src="https://public.tableau.com/profile/ctrly#!/vizhome/Steps_Made/Blatt1:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>  
+<iframe seamless frameborder="0" src="https://public.tableau.com/profile/ctrly#!/vizhome/Steps_Made/Blatt1?:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>  
 
 <iframe src="https://public.tableau.com/views/GTSRB_Result_Viz/GTSRB?:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450'></iframe>
 
