@@ -1,0 +1,10 @@
+---
+layout: post
+title: SAS Visual Analytics. A short (re)-introduction based on SAS Viya. 
+cover-img: /assets/img/visual_analytics.jpg
+tags: [data, sas, visualization]
+---
+
+In my cases the battle of analytical tools was decided. I prefered R over Python and only used SAS when I had to, occasionally running and adapting procedures for clients working with SAS. Later I had to decide for an visualization platform and prefered Tableau over SAS Visual Analytics for every single consideration I took into account. 
+
+With SAS Viya I now have the opportunity to change my views and let SAS Visual Analytics convince me. When I thought of SAS I imagined a slow moving enterprise solution like SPSS, when it comes to visualizations I thought of excel and powerpoint in the 1990s.

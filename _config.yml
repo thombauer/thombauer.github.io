@@ -14,7 +14,7 @@ author: Thom Bauer
 navbar-links:
   About Me: "aboutme"
   Resources:
-     - Tableau: "https://public.tableau.com/profile/ctrly#!/"
+     - Tableau Public: "https://public.tableau.com/profile/ctrly#!/"
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://thombauer.github.io"
@@ -41,11 +41,11 @@ round-avatar: true
 social-network-links:
   email: "thom.bauer@hotmail.com"
 #  facebook: deanattali
-  github: "https://github.com/thombauer"
+  github: thombauer
 #  twitter: daattali
 #  rss: true
 #  reddit: yourname
-  linkedin: "www.linkedin.com/in/thombauer"
+  linkedin: thombauer
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -103,7 +103,7 @@ footer-link-col: "#404040"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-172319848-1"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
