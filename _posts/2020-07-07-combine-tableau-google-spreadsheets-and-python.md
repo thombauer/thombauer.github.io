@@ -157,9 +157,10 @@ Tableau is a leading tool when it comes to Dashboarding and Visualization. I use
 
 When the installation process is finished and you have your free profile on [Tableau Public](https://public.tableau.com) you can start to connect the Google Spreadsheet you built in the previous steps. You select connection to a server and then to Google Spreadsheets. In the dialog select your Google account and work your way thru to your saved Google Spreadsheets. When you successfully connected Tableau Desktop to your Google account you can select a Google Spreadsheet in the Tableau Desktop dialog.
 
+![Tableau](/assets/img/Tableau_steps.jpg)
+
 Next is the configuration of the Visualization. For the purpose of this Blog I keep it simple, click on the date field and the value field and select an automatic timeline visualization. I add a trendline from the Analytics pane and an average with confidence interval. You can see, that my steps are increasing slightly during the measuring period, good work! I save my workbook and publish it to my Tableau Public Account. Google authorization is needed, the Tableau workbook is now connected with the Tableau Public Platform and with Google Spreadsheets as data source. Tableau Desktop opens the web browser, you can edit the name and properties of your published visualization and importantly select to update the data source once a day.
 
-![Tableau](/assets/img/Tableau_steps.jpg)
 
 In Tableau Public the final Dashboard looks like this. It's interactive! Play around with the dates and see what happens when you group them differently.
 
