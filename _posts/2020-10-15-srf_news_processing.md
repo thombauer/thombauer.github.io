@@ -9,6 +9,7 @@ While having no clue about a global pandemic about to start just 6 months later 
 
 Title Image by: <span>Photo by <a href="https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raphael Schaller</a> on <a href="https://unsplash.com/s/photos/words?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
+In the following short introduction to the topic I want to show how easy news headlines can be crawled, present approaches to data preparation and to produce a plot that is annotated with important events. I know about the phrase yesterday's news but sometimes it can present interesting data to play around with.
 
 ![covid](/assets/img/srf.jpg)
 <span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> 
@@ -140,6 +141,6 @@ As a result we can look at the plot below.
 
 Interesting is, that as a national news chanel SRF concentrated on a national election for quite a long time. Brexit agreement and execution peaked but Brexit was no long term topic. Around the turn of the year none of the selected topic dominated, SRF is making news on several national and regional topics. This is something you would expect everytime apart voting seasons. This year even silly season was overtaken by the pandemic. You can see dominating direct democratic referendums in early 2020 and late 2020. Trump is a backround noise topic, peaking with black lives matter and the first presedential debate some days ago. Corona comes into play with the second Chinese dying from the disease in late January 2020. After that Corona dominated almost every day only topped by the very important referendum in September 2020. Let's see what's happening with the upcoming US election and a possible flare up of infection rates in the last quarter of 2020. This might lead to similar headline peaks we can see in April 2020.
 
-This Blog post showed a very easy way to crawl news data, to process and to visualize it. This can be adapted for any website and interest.
+This Blog post showed a very easy way to crawl news data, to process and to visualize it. This can be adapted for any website and interest. If you want to go further I encourage you to read my guide to a completely free workflow from data to Google Spreadsheets and Tableau Public to automate self updating interactive  [Dashboards](https://thombauer.github.io/2020-07-07-combine-tableau-google-spreadsheets-and-python/).
 
 ***Thank you, and have a beautiful day!***
