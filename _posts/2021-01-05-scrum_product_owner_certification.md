@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I prepared for achieving the scrum.org PSPO I certification
+title: How I prepared to achieve the scrum.org PSPO I certification
 cover-img: /assets/img/scrum_certificate.jpg
 tags: [agile, Scrum, development]
 ---
