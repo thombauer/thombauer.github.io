@@ -28,13 +28,13 @@ In an agile environment you will get in touch with several real world problems -
 
 ***Certification***
 
-While achieving a certificate to prove your knowledge is not the most important part of your journey but it may be expected by your organization or might help you to apply for a new position. The first step towards the certification is done, you understand the Scrum Framework and hopefully apply it, you read a lot about implications and had a professional training. The next step is passing the open (and free) assessments on scrum.org, mlapshin.com and volkerdon.com to get familiar with the special vocabulary all questions are build on. If English is not your native language the scrum.org exam is also an advanced test of language capabilities another Scrum Coach once said to me. So be prepared and aware that the real exam questions will be different from the ones in every free assessment. While filling out the multiple choice questions of the PSPO I exam it is very helpful to write down the questions you want to double check after you fully proceeded in the time left. You need 85% correct answers from 80 questions in a 60 minutes time-box to achieve your certification.
+While achieving a certificate to prove your knowledge is for certain not the most important part of your journey. It may be expected by your organization or might help you to apply for a new position. The first step towards the certification is done, you understand the Scrum Framework and hopefully apply it, you read a lot about implications and had a professional training. The next step is passing the open (and free) assessments on scrum.org, mlapshin.com and volkerdon.com to get familiar with the special vocabulary all questions are build on. If English is not your native language the scrum.org exam is also an advanced test of language capabilities another Scrum Coach once said to me. So be prepared and aware that the real exam questions will be different from the ones in every free assessment. While filling out the multiple choice questions of the PSPO I exam it is very helpful to write down the questions you want to double check after you fully proceeded in the time left. You need 85% correct answers from 80 questions in a 60 minutes time-box to achieve your certification.
 
 ***Preparation wrap-up***
 
 - Read and understand the Scrum Guide on scrum.org  
 - Follow the Product Owner Learning Path on scrum.org  
-- Read some of the book recommended in the suggested readings page on scrum.org  
+- Read parts of the books recommended in the suggested readings page on scrum.org  
 - Important: Work in an organization that uses Scrum or other iterative agile frameworks  
 - Attend the 2-day Professional Scrum Product Owner course from scrum.org  
 - Pass the free open assessments on scrum.org, mlapshin.com and volkerdon.com many times with 90-100%  
