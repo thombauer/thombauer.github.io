@@ -8,7 +8,7 @@ tags: [data science, fitness, sports]
 
 To find useful data for modeling metrics that really are part of my life, I decided to order the recordings from my Withings Steel HR smartwatch and to have a look what I'm able to do with the raw data. I'm sure you can download the data of your fitness tracker. Depending on the format you receive you will have to do some different data preparation to get useful data for further analysis.
 
-Title Image by: <span>Photo by <a href="https://unsplash.com/@chilinik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Kostrykin</a> on <a href="https://unsplash.com/s/photos/fitness-tracker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+Title Image by: <span><a href="https://unsplash.com/@chilinik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Kostrykin</a> on <a href="https://unsplash.com/s/photos/fitness-tracker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ## Data Collection and Preparation
 
