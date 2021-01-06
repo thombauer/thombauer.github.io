@@ -7,10 +7,13 @@ tags: [agile, Scrum, development]
 
 In this post I want to give a short introduction how I achieved the certification "Professional Scrum Product Owner I" from scrum.org. Some reviews state that of all the certifications in this area available right now, PSPO is easily the most challenging one to complete. Furthermore you have to keep in mind that the PSPO is taken in English only. To prepare you can follow the learning path from scrum.org and I like to share some insights from my personal experiences which may help you to start your journey into Scrum and prove your knowledge with an industry recognized certification.
 
+Title Image by: <span>Photo by <a href="https://unsplash.com/@steve3p_0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steve Halama</a> on <a href="https://unsplash.com/s/photos/mauna-kea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+
 ***On the battlegrounds of product development***
 
-Skiping waterfall and "classic" project management paths and following the principles of agile development is state of the art for most successful companies - not only in the software industry. Many companies differ in the extend of applying agile principles but most approach the Agile Manifesto and the Scrum framework the close appetite for change and open minded employees allow. When you scroll through forums and blogs - what I did a lot in preparation for my certification - you find people asking for answers to exam questions, people discussing real world applications of the Scrum framework and people mocking Scrum and Agile as religion. At LinkedIn I recently read in a post that we should weight shareholder value over customer satisfaction and value to customer when building products and a heated debate following the original posting. 
-From my point of view - I have seen classic and iterative approaches in some manifestations, even coexisting or strictly separated - many approaches can lead to successful products, depending on the product and the company, the employees and business environment. 
+Moving from waterfall and "classic" project management paths and following the principles of agile development is state of the art for many successful companies - not only in the software industry. Most of these companies differ in the extend of applying agile principles but they approach the Agile Manifesto and the Scrum framework the close appetite for change and open minded employees allow. When you scroll through forums and blogs - what I did a lot in preparation for my certification - you find people asking for answers to exam questions, people discussing real world applications of the Scrum framework and people mocking Scrum and Agile as religion. At LinkedIn I recently read in a post that we should weight shareholder value over customer satisfaction and value to customer when building products and a heated debate following the original posting. 
+To cool down emotions a bit: There are classic and iterative approaches in some manifestations, coexisting or strictly separated. Many approaches can lead to successful products, depending on the product and the company, the employees and business environment. 
 
 ![scrum](/assets/img/liberators_scrum.png) 
 
@@ -28,7 +31,7 @@ In an agile environment you will get in touch with several real world problems -
 
 ***Certification***
 
-While achieving a certificate to prove your knowledge is for certain not the most important part of your journey. It may be expected by your organization or might help you to apply for a new position. The first step towards the certification is done, you understand the Scrum Framework and hopefully apply it, you read a lot about implications and had a professional training. The next step is passing the open (and free) assessments on scrum.org, mlapshin.com and volkerdon.com to get familiar with the special vocabulary all questions are build on. If English is not your native language the scrum.org exam is also an advanced test of language capabilities another Scrum Coach once said to me. So be prepared and aware that the real exam questions will be different from the ones in every free assessment. While filling out the multiple choice questions of the PSPO I exam it is very helpful to write down the questions you want to double check after you fully proceeded in the time left. You need 85% correct answers from 80 questions in a 60 minutes time-box to achieve your certification.
+While achieving a certificate to prove your knowledge is for certain not the most important part of your journey. It may be expected by your organization or might help you to apply for a new position. The first step towards the certification is done: You understand the Scrum Framework and hopefully apply it, you read a lot about implications and had a professional training. The next step is passing the open (and free) assessments on scrum.org, mlapshin.com and volkerdon.com to get familiar with the special vocabulary all questions are build on. If English is not your native language the scrum.org exam is also an advanced test of language capabilities another Scrum Coach once said to me. So be prepared and aware that the real exam questions will be different from the ones in every free assessment. While filling out the multiple choice questions of the PSPO I exam it is very helpful to write down the questions you want to double check. After you fully proceeded the assessment you should have some time left. You need 85% correct answers from 80 questions in a 60 minutes time-box to achieve your certification.
 
 ***Preparation wrap-up***
 
@@ -37,14 +40,14 @@ While achieving a certificate to prove your knowledge is for certain not the mos
 - Read parts of the books recommended in the suggested readings page on scrum.org  
 - Important: Work in an organization that uses Scrum or other iterative agile frameworks  
 - Attend the 2-day Professional Scrum Product Owner course from scrum.org  
-- Pass the free open assessments on scrum.org, mlapshin.com and volkerdon.com many times with 90-100%  
-- Use your free password for an assessment within 14 days after Professional Scrum Product Owner course from scrum.org  
+- Pass the free open assessments on scrum.org, mlapshin.com and volkerdon.com many times with 100%  
+- Use your free password for an assessment within 14 days after you attended the Professional Scrum Product Owner course from scrum.org  
 - If you don't score at least 85% you receive a second attempt at no additional cost  
 
 
 ***Beyond the Scrum Guide***
 
-Once you understood the fundamentals and applied them successfully the fun has just started yet. As a Product Owner you can use many techniques for crafting commitments, estimate value or develop business models. You will get in touch with many interesting techniques to collect user feedback, analyze data over time and A/B-test everything. Maybe you will work in a larger organization with multiple Scrum teams which will expand your knowledge and skills even more.
+Once you understood the fundamentals and applied them successfully the fun has just started yet. As a Product Owner you can use many techniques for crafting commitments, estimate value or develop business models. You will get in touch with many interesting techniques to collect user feedback, analyze data over time and A/B-test everything. Maybe you will work in a larger organization with multiple Scrum teams which will expand your knowledge and skills even more. It is a big world and possibilities are hardly limited.
 
 ***Thank you, and have a beautiful day!***
 
