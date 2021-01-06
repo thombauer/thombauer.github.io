@@ -12,6 +12,9 @@ Title Image by: <span><a href="https://unsplash.com/@steve3p_0?utm_source=unspla
 
 ***On the battlegrounds of product development***
 
+## On the battlegrounds of product development
+
+
 Moving from waterfall and "classic" project management paths and following the principles of agile development is state of the art for many successful companies - not only in the software industry. Most of these companies differ in the extend of applying agile principles but they approach the Agile Manifesto and the Scrum framework the close appetite for change and open minded employees allow. When you scroll through forums and blogs - what I did a lot in preparation for my certification - you find people asking for answers to exam questions, people discussing real world applications of the Scrum framework and people mocking Scrum and Agile as religion. At LinkedIn I recently read in a post that we should weight shareholder value over customer satisfaction and value to customer when building products and a heated debate following the original posting. 
 To cool down emotions a bit: There are classic and iterative approaches in some manifestations, coexisting or strictly separated. Many approaches can lead to successful products, depending on the product and the company, the employees and business environment. 
 
