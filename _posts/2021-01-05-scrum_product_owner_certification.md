@@ -5,7 +5,7 @@ cover-img: /assets/img/scrum_certificate.jpg
 tags: [agile, Scrum, development]
 ---
 
-In this post I want to give a short introduction how I achieved the certification "Professional Scrum Product Owner I" from scrum.org. Some reviews state that of all the certifications in this area available right now, PSPO is easily the most challenging one to complete. Furthermore you have to keep in mind that the PSPO is taken in English only. To prepare you can follow the learning path from scrum.org and I like to share some insights from my personal experiences which may help you to start your journey into Scrum and prove your knowledge with a industry recognized certification.
+In this post I want to give a short introduction how I achieved the certification "Professional Scrum Product Owner I" from scrum.org. Some reviews state that of all the certifications in this area available right now, PSPO is easily the most challenging one to complete. Furthermore you have to keep in mind that the PSPO is taken in English only. To prepare you can follow the learning path from scrum.org and I like to share some insights from my personal experiences which may help you to start your journey into Scrum and prove your knowledge with an industry recognized certification.
 
 ***On the battlegrounds of product development***
 
