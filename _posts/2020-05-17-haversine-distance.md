@@ -49,6 +49,7 @@ df.head(5)
 ```
 
 
+
 ### Data Preparation
 
 Wenn wir uns die Daten genauer anschauen, ist zu sehen, dass noch ein paar Zeilen Code in die Aufbereitung der Daten zu investieren ist, bevor die Distanzen sauber berechnet werden können. Zunächst müssen Längen- und Breitengrad getrennt werden, ein Ausschluss doppelter PLZ erfolgen und im letzten Schritt noch ein Teildatensatz mit den Postleitzahlen des Kantons Luzern erstellt werden.
