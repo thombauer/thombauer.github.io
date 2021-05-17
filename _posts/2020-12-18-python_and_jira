@@ -4,3 +4,4 @@ title: Use Python to take JIRA to the next level. Blast restrictions of JIRA wit
 cover-img: /assets/img/srf_head.jpg
 tags: [data science, JIRA, Python]
 ---
+Programming as a soft skill for project managers is something I haven't seen very often. As a project manager you face lots of recurring tasks you can easily accelerate with some pandas basics. We could like all those python 101s build some basic data management skills but I want to show you a way to get the best from JIRA whetter you're a Product Owner, Product Manager or Scrum Master. We learn how to export data from Jira Query Language and to process it to Pandas Data Frame, to perform some joining to automatically monitor Stories inside Features inside Epics and to synchronize your team's available story points with planned story points including velocity and calculated capacity.
