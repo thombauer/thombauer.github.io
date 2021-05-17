@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Implementierung der Haversine-Distanz für Schweizer Postleitzahlen. Von opendata zu Beispielfragestellungen.
+title: Berechnung der Haversine-Distanz für Schweizer Postleitzahlen. Von opendata zur Implementierung in Python.
 cover-img: /assets/img/world.jpg
 tags: [data science, geography, python, open data]
 ---
 
-Jede Schweizer Postleitzahl verfügt neben weiteren beschreibenden Features über eine Zuweisung zu Längen- und Breitengraden. Für einen schnellen Überblick über die Distanz zwischen den offiziellen Koordinaten von zwei Postleitzahlen lässt sich mit der Haversine-Formel schnell ein passendes Resultat errechnen. Die berechnete Distanz kann helfen, räumliche Daten in Machine-Learning-Modellen als Feature nutzbar zu machen, aber auch für prinzipiell alle Anwendungen, bei denen ein Set von Längen- und Breitengraden mit einem anderen Set abgeglichen werden soll, sind diese Distanzen nutzbar. Beispielweise könnte man sich alle Wochenmärkte im Umkreis von 50 Kilometern um den eigenen Wohnort ausgeben lassen.
+Jede Schweizer Postleitzahl verfügt neben weiteren beschreibenden Features über eine Zuweisung zu Längen- und Breitengraden. Für einen schnellen Überblick über die Distanz zwischen den offiziellen Koordinaten von zwei Postleitzahlen lässt sich mit der Haversine-Formel schnell ein passendes Resultat errechnen. Die berechnete Distanz kann helfen, räumliche Daten in Machine-Learning-Modellen als Feature nutzbar zu machen, aber auch prinzipiell für andere Anwendungen, bei denen ein Set von Längen- und Breitengraden mit einem anderen Set abgeglichen werden soll, sind diese Distanzen nutzbar. Beispielweise könnte man sich alle Wochenmärkte im Umkreis von 50 Kilometern um den eigenen Wohnort ausgeben lassen.
 
 Titel-Image: <span><a href="https://unsplash.com/@louishansel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis Hansel</a> on <a href="https://unsplash.com/s/photos/circle-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 
 
-## open data
+## Swiss Open Data
 
-Die Ausgangsdaten für die Implementierung der Distanzen lassen sich aus einem aktuellen Datensatz auf swiss open date beschaffen. Die Schweizerische Post [swiss post](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) stellt die Daten zur Verfügung und bietet darüber hinaus die Möglichkeit , sich über Updates der Daten informieren zu lassen. So bleiben die verwendeten Daten immer aktuell.
+Die Ausgangsdaten für die Implementierung der Distanzen lassen sich aus einem aktuellen Datensatz auf swiss open date beschaffen. Die Schweizerische Post stellt die [Daten](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) zur Verfügung und bietet darüber hinaus die Möglichkeit, sich über Updates der Daten informieren zu lassen. So bleiben die verwendeten Daten immer aktuell. Nach dem Einlesen der Daten, werden wir weiter unten zu einigen Aufbereitungsschritten kommen, die notwendig sind, bevor die Daten verwendet werden können.
 
 ![opendata](/assets/img/opendata.png)
 
