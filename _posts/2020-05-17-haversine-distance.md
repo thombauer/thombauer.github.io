@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementierung der Haversine-Distanz für Schweizer Postleitzahlen. Von opendata zu Beispielfragestellungen.
-cover-img: /assets/img/world.png
+cover-img: /assets/img/world.jpg
 tags: [data science, geography, python, open data]
 ---
 
