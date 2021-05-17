@@ -181,7 +181,7 @@ df.to_excel(fname, index=False, sheet_name='LU')
 
 ```
 
-![distance](/assets/img/plz_dist.png)
+![distances](/assets/img/plz_dist.png)
 
 
 ## Zusammenfassung
