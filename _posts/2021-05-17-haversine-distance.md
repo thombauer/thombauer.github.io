@@ -21,7 +21,7 @@ Die Ausgangsdaten für die Implementierung der Distanzen lassen sich aus einem a
 
 Die Haversine-Formel beschreibt eine Anwendung der sphärischen Trigonometrie, welche die Seiten und Winkel von sphärischen Dreiecken in Beziehung setzt. Die ersten Tabellen mit diesen Werten findet man im frühen 18. Jahrhundert - verwendet wurden sie für die Navigation. Mit der Formel lässt sich die kürzeste Distanz zwischen zwei Punkten auf einer Kugel unter Verwendung ihrer entlang der Oberfläche gemessenen Längen- und Breitengrade berechnen. Die Ergebnisse sind dahingehend nicht perfekt, das die Berechnung die Annahme trifft, dass es sich bei der Erde um eine perfekte Kugel handele, während sie in Wirklichkeit ein abgeflachter Sphäroid ist. Die Formel lässt sich in vielen Programmiersprachen implementieren, unten sehen wir die Pipeline für einen Pandas Dataframe.
 
-<span>Photo by <a href="https://unsplash.com/@seagrave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Seagrave</a> on <a href="https://unsplash.com/s/photos/swiss-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span> ![Navigate](/assets/img/navigate.jpg)
+![Navigate](/assets/img/navigate.jpg)<span>Photo by <a href="https://unsplash.com/@seagrave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Seagrave</a> on <a href="https://unsplash.com/s/photos/swiss-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span> 
 
 
 ## Code in Python
@@ -31,7 +31,7 @@ Nach dem Download der vollständigen PLZ-Informationen für die Schweiz von der 
 
 ### Inputdaten
 
-Von [swiss post open data](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) können aktuelle PLZ-Informationen via API oder als flat file beschafft werden. Um den Code einfacher zu halten, habe ich die Daten als Excel-File abgespeichert und wie unten beschrieben eingelesen.
+Von [swiss post open data](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) können aktuelle PLZ-Informationen via API bezogen oder als flat file heruntergeladen werden. Um den Code einfacher zu halten, habe ich die Daten zunächst als Excel-File abgespeichert und wie unten beschrieben eingelesen.
 
 ```python
 import pandas as pd
@@ -159,7 +159,7 @@ df['dlon'] =  df['rlon2'] - df['rlon1']
 df['dlat'] =  df['rlat2'] - df['rlat1']
 df['a'] = np.sin((df['rlat2']-df['rlat1']) / 2)**2 + np.cos(df['rlat1']) * np.cos(df['rlat2']) * np.sin((df['rlon2']-df['rlon1']) / 2)**2
 df['c'] = 2 * np.arctan2(np.sqrt(df['a']), np.sqrt(1 - (abs(df['a']))))
-df['distance'] = 6373.0 * df['c']
+df['distance'] = 6371.0 * df['c']
 df.head()
  
 ```
