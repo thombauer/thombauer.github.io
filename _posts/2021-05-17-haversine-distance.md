@@ -5,21 +5,21 @@ cover-img: /assets/img/world.jpg
 tags: [data science, geography, python, open data]
 ---
 
-Jede Schweizer Postleitzahl verfügt neben weiteren beschreibenden Features über eine Zuweisung zu Längen- und Breitengraden. Für einen schnellen Überblick über die Distanz zwischen den offiziellen Koordinaten von zwei Postleitzahlen lässt sich mit der Haversine-Formel schnell ein passendes Resultat errechnen. Die berechnete Distanz kann helfen, räumliche Daten in Machine-Learning-Modellen als Feature nutzbar zu machen, aber auch prinzipiell für andere Anwendungen, bei denen ein Set von Längen- und Breitengraden mit einem anderen Set abgeglichen werden soll, sind diese Distanzen nutzbar. Beispielweise könnte man sich alle Wochenmärkte im Umkreis von 50 Kilometern um den eigenen Wohnort ausgeben lassen.
+Jede Schweizer Postleitzahl verfügt neben weiteren beschreibenden Features über eine Zuweisung zu Längen- und Breitengraden. Für einen schnellen Überblick über die Distanz zwischen den offiziellen Koordinaten von zwei Postleitzahlen lässt sich mit der Haversine-Formel schnell ein passendes Resultat errechnen. Die berechnete Distanz kann helfen, räumliche Daten in Machine-Learning-Modellen als Feature nutzbar zu machen. Prinzipiell ist die Distanz aber auch für andere Anwendungen nutzbar, bei denen ein Set von Längen- und Breitengraden mit einem anderen Set abgeglichen werden soll. Beispielweise könnte man sich alle Wochenmärkte im Umkreis von 50 Kilometern um den eigenen Wohnort ausgeben lassen.
 
 Titel-Image: <span><a href="https://unsplash.com/@louishansel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis Hansel</a> on <a href="https://unsplash.com/s/photos/circle-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 
 
 ## Swiss Open Data
 
-Die Ausgangsdaten für die Implementierung der Distanzen lassen sich aus einem aktuellen Datensatz auf swiss open date beschaffen. Die Schweizerische Post stellt die [Daten](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) zur Verfügung und bietet darüber hinaus die Möglichkeit, sich über Updates der Daten informieren zu lassen. So bleiben die verwendeten Daten immer aktuell. Nach dem Einlesen der Daten, werden wir weiter unten zu einigen Aufbereitungsschritten kommen, die notwendig sind, bevor die Daten verwendet werden können.
+Die Ausgangsdaten für die Implementierung der Distanzen lassen sich aus einem aktuellen Datensatz auf swiss open date beschaffen. Die Schweizerische Post stellt die [Daten](https://swisspost.opendatasoft.com/explore/dataset/plz_verzeichnis_v2/information/?dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBsel92ZXJ6ZWljaG5pc192MiIsIm9wdGlvbnMiOnsibG9jYXRpb24iOiI4LDQ2LjY1NTA5LDguNDE4MjcifX0sImNoYXJ0cyI6W3sidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6Im9ucnAiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjNjZjMmE1In1dLCJ4QXhpcyI6InBsel96eiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWV9&location=9,47.01116,7.4913) zur Verfügung und bietet darüber hinaus die Möglichkeit, sich über Updates der Daten informieren zu lassen. So bleiben die verwendeten Daten immer aktuell. Nach dem Einlesen der Daten, sind weiter unten im Script einige Aufbereitungsschritte notwendig, bevor die Daten verwendet werden können.
 
 ![opendata](/assets/img/opendata.png)
 
 
-## Haversine Formula
+## Haversine-Formel
 
-Die Haversine-Formel beschreibt eine Anwendung der sphärischen Trigonometrie, welche die Seiten und Winkel von sphärischen Dreiecken in Beziehung setzt. Die ersten Tabellen mit diesen Werten findet man im frühen 18. Jahrhundert - verwendet wurden sie für die Navigation. Mit der Formel lässt sich die kürzeste Distanz zwischen zwei Punkten auf einer Kugel unter Verwendung ihrer entlang der Oberfläche gemessenen Längen- und Breitengrade berechnen. Die Ergebnisse sind dahingehend nicht perfekt, das die Berechnung die Annahme trifft, dass es sich bei der Erde um eine perfekte Kugel handele, während sie in Wirklichkeit ein abgeflachter Sphäroid ist. Die Formel lässt sich in vielen Programmiersprachen implementieren, unten sehen wir die Pipeline in einem Pandas Dataframe.
+Die Haversine-Formel beschreibt eine Anwendung der sphärischen Trigonometrie, welche die Seiten und Winkel von sphärischen Dreiecken in Beziehung setzt. Die ersten Tabellen mit diesen Werten findet man im frühen 18. Jahrhundert - verwendet wurden sie für die Navigation. Mit der Formel lässt sich die kürzeste Distanz zwischen zwei Punkten auf einer Kugel unter Verwendung ihrer entlang der Oberfläche gemessenen Längen- und Breitengrade berechnen. Die Ergebnisse sind dahingehend nicht perfekt, das die Berechnung die Annahme trifft, dass es sich bei der Erde um eine perfekte Kugel handele, während sie in Wirklichkeit ein abgeflachter Sphäroid ist. Die Formel lässt sich in vielen Programmiersprachen implementieren, unten sehen wir die Pipeline für einen Pandas Dataframe.
 
 <span>Photo by <a href="https://unsplash.com/@seagrave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Seagrave</a> on <a href="https://unsplash.com/s/photos/swiss-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span> ![Navigate](/assets/img/navigate.jpg)
 
@@ -128,7 +128,7 @@ print('rows in df: ', str(len(df_match)))
  
 ### Distanzberechnung: Haversine-Formel
   
-Die Geo-Informationen ermöglichen uns jetzt mithilfe der Haversine-Formel eine einfache Distanzrechnung innerhalb der PLZ-Paare im Datensatz zu den PLZ im Kanton Luzern zu berechnen. Auch für sonstige Längen- und Breitengrade lässt sich die Formel einfach anwenden. Beispielsweise kann man um den eigenen Wohnort herum berechnen, welche Wochenmärkte oder spezielle Geschäfte sich in einem definierten Umkreis befinden.
+Die Geo-Informationen ermöglichen uns jetzt mithilfe der Haversine-Formel eine einfache Distanzrechnung innerhalb der PLZ-Paare im Datensatz zu den PLZ im Kanton Luzern zu berechnen. Auch für sonstige Längen- und Breitengrade lässt sich die Formel einfach anwenden. Beispielsweise kann man um den eigenen Wohnort herum berechnen, ob sich spezielle Geschäfte oder andere interessante Orte in einem frei definierten Umkreis befinden.
 Für das Beispiel der Posteitzahlen im Kanton Luzern könnte eine Fragestellung sein, welche Postleitzahlen die grösstmögliche und welche PLZ die geringsmögliche Distanz zueinander haben. Das Beispiel lässt sich mit wenigen Anpassungen am Script auch für die gesamte Schweiz wiederholen.
 
 
@@ -186,7 +186,7 @@ df.to_excel(fname, index=False, sheet_name='LU')
 
 ## Zusammenfassung
 
-Mit wenigen Zeilen Code und Daten aus swiss open data lassen sich einfache Distanzen für Entfernungsdaten zwischen GPS-Koordinaten errechnen und in einer Datenbanktabelle ablegen. Diese Daten können dann für Machine-Learning-Modelle verwendet werden, die Distanzen als Feature nutzen möchten. Zusätzlich sind alle möglichen anderen Anwendungsfälle für diese Arten von Daten denkbar, beispielsweise im Sport- oder Freizeitbereich aber auch für Marketingzwecke.
+Mit wenigen Zeilen Code und Daten aus swiss open data lassen sich einfache Distanzen für Entfernungsdaten zwischen Längen- und Breitengraden errechnen und in einer Datenbanktabelle ablegen. Diese Daten können dann für Machine-Learning-Modelle verwendet werden, die Distanzen als Feature nutzen möchten. Zusätzlich sind alle möglichen anderen Anwendungsfälle für diese Arten von Daten denkbar, beispielsweise im Sport- oder Freizeitbereich aber auch für Marketingzwecke.
 Die finalen Daten lassen sich sehr einfach mit Python, Google Spreadsheets und Tableau Public automatisiert in einem Dashboard ablegen. Die Anleitung zum kompletten Ablauf findet sich hier: [Python+Google+Tableau](https://thombauer.github.io/2020-07-07-combine-tableau-google-spreadsheets-and-python/). In Tableau Public lässt sich dann ein Dashboard konfigurieren, dass alle Gemeinden der Schweiz, die in einem bestimmten Umkreis um eine Ausgangsgemeinde liegen, einfärbt. 
 
 
