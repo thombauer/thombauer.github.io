@@ -347,6 +347,10 @@ print(mydeck, target="plot_deck_final.pptx")
 
 ```
 
+
+Das Ergebnis kann sich optisch sehen lassen - die von officeR verwendeten Funktionen bauen auf bekannten Pipelines und Packages auf, die Laufzeit des Scripts ist besser als bei vorangegangenen Lösungen.
+
+
 ![final](/assets/img/powerpoint.png)
 
 ![slide1](/assets/img/slide1.png)
@@ -357,7 +361,7 @@ print(mydeck, target="plot_deck_final.pptx")
 
 ## Zusammenfassung
 
-Das oben gezeigte Script lässt sich noch um zahlreiche Funktionen erweitern, die Möglichkeiten von officeR sind vielfältig und bieten fast alle Möglichkeiten, um publikationsfertige Präsentationen zu erstellen. Die erstellten Präsentationen können schnell erweitert werden, nach einem Datenupdate lassen sich die Power-Points schnell erneut erzeugen.
+Das oben gezeigte Script lässt sich noch um zahlreiche Funktionen erweitern, die Möglichkeiten von officeR sind vielfältig und bieten fast alles, um publikationsfertige Präsentationen zu erzeugen. Die erstellten Präsentationen können schnell erweitert werden, nach einem Datenupdate lassen sich die Power-Points schnell erneut erzeugen.
 Ob als Mittel zur zielgruppengerechten Kommunikation Richtung Management oder als Deck für den nächsten Workshop und die nächste Tagung - die finale Präsentation lässt sich für viele Zwecke optimieren. Mit Platzhaltern können die fixen Texte parametrisiert werden, mit Funktionen der Code vereinfacht und noch schneller gemacht werden. Data Frames können aus Analyticsanwendungen und Data-Science-Workflows als Output entnommen und mit officeR zu schicken Power-Point-Decks verarbeitet werden.
 
 
