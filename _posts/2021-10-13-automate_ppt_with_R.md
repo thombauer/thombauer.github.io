@@ -12,13 +12,15 @@ Ein Power-Point-Template via Script mit Plots, Text und Tabellen direkt aus Data
 
 Titel-Image: <span><a href="https://unsplash.com/@oace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arnt Oberschmidt</a> on <a href="https://unsplash.com/@oace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 
-## 
+<br/><br/> 
+
 ## Automatisierung von Power Point Decks mit R und officeR
 
 Dieser Blogpost beschäftigt sich damit, wie sich mit dem R Package officeR komplette Power-Point-Decks direkt aus Data Frames erstellen lassen - über Folienmaster gebranded und mit schicken bbc_style-Plots direkt in hoher Qualität und in wenigen Schritten. Unabhängig von den Umgebungen und Tools die im Kontext von AI, Machine Learning und Data Science für Datenaufbereitung und Modellierung genutzt werden, liegt ein entscheidender Schritt in der Kommunikation der Ergebnisse an Fachverantwortliche und Entscheidungsträger. Nicht immer besteht die Möglichkeit Ergebnisse über Reportinglösungen in Dashboards anzubieten, oft ist die Erstellung eines Microsoft-Office-Dokuments zur Dokumentation, Kommunikation und Abnahme ein Standard.
 Ausgangspunkt für die Bearbeitung des eigenen Decks ist entweder der firmeneigene Folienmaster oder ein leeres Power-Point-Dokument.
 
-## 
+<br/><br/> 
+
 ## Vorbereitungen Schritt I: Packages installieren und laden, Daten lesen und aufbereiten
 
 Die unten aufgeführten Packages müssen installiert und geladen werden. Hierbei sind vor allem bbplot, officer und gapminder hervorzuheben, die zentral für die Erstellung der Power-Point-Decks sein werden. Eine Power-Point-Vorlage selbst ist nicht notwendig, officer kann mit dem Office-Standard arbeiten, allerdings kann auch gleich der Unternehmensmaster verwendet werden, falls vorhanden. Nach dem Laden der Packages folgt ein kurzer Test auf den gapminder-Daten.
@@ -48,7 +50,8 @@ line_df
 
 ```
 
-## 
+<br/><br/> 
+
 ## Vorbereitungen Schritt II: bbc_style-Plots mit bbplot
 
 Das BBC data team hat vor 2 Jahren ein fantastisches R Package veröffentlicht, dass es ermöglicht, veröffentlichungsreife Grafiken im bekannten BBC-Style für Datenjournalismus mithilfe von ggplot2 reproduzierbar zu machen. GGplot bietet auch unerfahrenen Programmierern eine leicht zu erlernende Syntax um von Data Frames zu vielfältigen Plots zu kommen. Für das Befüllen der Power-Point-Decks greife ich gern auf diese sehr schicken Plots zurück, die sich von den Standard-ggplot-Designs unterscheiden und unverkennbar an den Stil der BBC angelehnt sind.
@@ -250,7 +253,8 @@ dumbbell <- ggplot(dumbbell_df, aes(x = `1967`, xend = `2007`, y = reorder(count
 
 ```
 
-## 
+<br/><br/> 
+
 ## Vorbereiten der Power-Point-Slides mit officeR
 
 Als Basis für die Power-Point-Slides können jegliche Folienmaster verwendet werden. Alternativ kann auch ein Power-Point-Default-File eingelesen werden. An einer solchen Datei wird auch der von officeR verwendete Aufbau deutlich. Ergänzt man das Script um einen Pfad zu einer Power-Point-Datei, dann verwendet officeR den Folienmaster der gewünschten Datei.
@@ -290,7 +294,8 @@ pl_slide4 = dml(ggobj = dumbbell)
 
 ```
 
-## 
+<br/><br/> 
+
 ## Abfüllen der Plots und Texte nach Power Point mit officeR
 
 Der letzte Schritt ist das Befüllen der Power-Point-Datei. Die Funktion read_pptx() liest den Folienmaster oder nutzt den Standard von Office. Die Bezeichnung der enthaltenen Masterseiten können ausgegeben werden, die Bezeichnung wird jeweils bei add_slide() als layout festgelegt. Mit der Funktion ph_with() können verschiedenste Inhalte eingefügt, platziert und skaliert werden. Für alle Funktionen empfiehlt sich ein Blick in das umfangreiche Dokumentationsmaterial zum Package officeR. Die Funktion print() speichert die finale Power-Point-Datei auf der Festplatte.
@@ -358,7 +363,8 @@ Das Ergebnis kann sich optisch sehen lassen - die von officeR verwendeten Funkti
 ![slide3](/assets/img/slide3.png)
 ![slide4](/assets/img/slide4.png)
 
-## 
+<br/><br/> 
+
 ## Zusammenfassung
 
 Das oben gezeigte Script lässt sich noch um zahlreiche Funktionen erweitern, die Möglichkeiten von officeR sind vielfältig und bieten fast alles, um publikationsfertige Präsentationen zu erzeugen. Die erstellten Präsentationen können schnell erweitert werden, nach einem Datenupdate lassen sich die Power-Points schnell erneut erzeugen.
