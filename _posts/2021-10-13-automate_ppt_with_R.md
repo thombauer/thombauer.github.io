@@ -17,6 +17,7 @@ Ausgangspunkt für die Bearbeitung des eigenen Decks ist entweder der firmeneige
 
 
 ![cover](/assets/img/cover.png)
+![slide](/assets/img/slide2.png)
 
 
 ## Vorbereitungen Schritt I: Packages installieren und laden, Daten lesen und aufbereiten
