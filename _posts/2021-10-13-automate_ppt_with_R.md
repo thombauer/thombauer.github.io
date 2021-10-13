@@ -2,7 +2,7 @@
 layout: post
 title: Automatisierung von Power-Point-Decks. Datengetriebene Befüllung von ppt-Folien mit R.
 cover-img: /assets/img/heart.jpg
-tags: [data science, office, R, automation]
+tags: [data science, office, r, automation]
 ---
 
 Ein Power-Point-Template via Script mit Plots, Text und Tabellen direkt aus Data Frames zu befüllen, ist eine gute Möglichkeit, fehleranfällige Routinearbeiten zu automatisieren und dabei viel Zeit zu sparen. Diese Automatisierung lässt sich als einer der finalen Schritte in alle Analyse-Pipelines integrieren und befreit Spezialisten im Bereich Analytics und Data Science von zeitaufwendigen Datenaufbereitungen in Microsoft Office. In Python sind über die Library pptx alle Funktionalitäten abgedeckt, in R lässt sich diese Arbeit beispielsweise via officeR automatisieren und auf diesem Package soll der Fokus dieses how-to liegen. OfficeR bietet eine sehr einfache Installation ohne die Java-Probleme anderer R-Packages für Office-Automatisierungen.
