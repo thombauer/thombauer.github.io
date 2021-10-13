@@ -2,7 +2,7 @@
 layout: post
 title: Using R and Python for Crawling and Processing Data from News Headlines.  
 cover-img: /assets/img/srf_head.jpg
-tags: [data, news, corona, pandemic, swiss]
+tags: [data, news, corona, pandemic, swiss, r, python]
 ---
 
 While having no clue about a global pandemic about to start just 6 months later I started to build a web crawler on srf.ch news headlines. Initially I was curious about the topics srf.ch is about to post every day, so I decided to save the headlines and see what I can process and visualize after a year. Then covid-19 came and dominated news rapidly, what we will see in the final plots of this blog post.
