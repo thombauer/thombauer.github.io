@@ -313,7 +313,7 @@ mydeck <- ph_with(x = mydeck, value = c(ti_slide1, ti_slide2, ti_slide3, ti_slid
                  location = ph_location_type(type = "body") )
 
 mydeck <- add_slide(mydeck, layout = "Two Content and Text", master = "Office Theme")
-mydeck <- ph_with( mydeck, p1,
+mydeck <- ph_with( mydeck, pl_slide1,
                   location = ph_location_left(),
                   bg = "transparent")
 mydeck <- ph_with(x = mydeck, value = tx_slide1,
@@ -322,7 +322,7 @@ mydeck <- ph_with(mydeck, value = ti_slide1, location = ph_location_type(type = 
 mydeck <- ph_with(mydeck, value = format(Sys.Date(), '%d.%m.%Y'), location = ph_location_type(type = "dt"))
 
 mydeck <- add_slide(mydeck, layout = "Two Content and Text", master = "Office Theme")
-mydeck <- ph_with( mydeck, p2,
+mydeck <- ph_with( mydeck, pl_slide2,
                   location = ph_location_left(),
                   bg = "transparent")
 mydeck <- ph_with(x = mydeck, value = tx_slide2,
@@ -331,7 +331,7 @@ mydeck <- ph_with(mydeck, value = ti_slide2, location = ph_location_type(type = 
 mydeck <- ph_with(mydeck, value = format(Sys.Date(), '%d.%m.%Y'), location = ph_location_type(type = "dt"))
 
 mydeck <- add_slide(mydeck, layout = "Two Content and Text", master = "Office Theme")
-mydeck <- ph_with( mydeck, p3,
+mydeck <- ph_with( mydeck, pl_slide3,
                    location = ph_location_left(),
                    bg = "transparent")
 mydeck <- ph_with(x = mydeck, value = tx_slide3,
@@ -340,7 +340,7 @@ mydeck <- ph_with(mydeck, value = ti_slide3, location = ph_location_type(type = 
 mydeck <- ph_with(mydeck, value = format(Sys.Date(), '%d.%m.%Y'), location = ph_location_type(type = "dt"))
 
 mydeck <- add_slide(mydeck, layout = "Two Content and Text", master = "Office Theme")
-mydeck <- ph_with( mydeck, p4,
+mydeck <- ph_with( mydeck, pl_slide4,
                    location = ph_location_left(),
                    bg = "transparent")
 mydeck <- ph_with(x = mydeck, value = tx_slide4,
