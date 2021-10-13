@@ -2,7 +2,7 @@
 layout: post
 title: My Data Science journey in 2020. Improving my skills in Python, SQL, SAS and Tableau
 cover-img: /assets/img/coding.jpg
-tags: [data science, Python, SQL, Tableau, SAS]
+tags: [data science, python, sql, tableau, sas]
 ---
 
 Last year was a blast when it comes to new forms of digital work and cooperation - at work and with family and friends. 
