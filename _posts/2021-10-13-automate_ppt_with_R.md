@@ -7,6 +7,9 @@ tags: [data science, office, R, automation]
 
 Ein Power-Point-Template via Script mit Plots, Text und Tabellen direkt aus Data Frames zu befüllen, ist eine gute Möglichkeit, fehleranfällige Routinearbeiten zu automatisieren und dabei viel Zeit zu sparen. Diese Automatisierung lässt sich als einer der finalen Schritte in alle Analyse-Pipelines integrieren und befreit Spezialisten im Bereich Analytics und Data Science von zeitaufwendigen Datenaufbereitungen in Microsoft Office. In Python sind über die Library pptx alle Funktionalitäten abgedeckt, in R lässt sich diese Arbeit beispielsweise via officeR automatisieren und auf diesem Package soll der Fokus dieses how-to liegen. OfficeR bietet eine sehr einfache Installation ohne die Java-Probleme anderer R-Packages für Office-Automatisierungen.
 
+![cover](/assets/img/cover.png)
+![slide](/assets/img/slide2.png)
+
 Titel-Image: <span><a href="https://unsplash.com/@oace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arnt Oberschmidt</a> on <a href="https://unsplash.com/@oace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 
 
@@ -14,10 +17,6 @@ Titel-Image: <span><a href="https://unsplash.com/@oace?utm_source=unsplash&utm_m
 
 Dieser Blogpost beschäftigt sich damit, wie sich mit dem R Package officeR komplette Power-Point-Decks direkt aus Data Frames erstellen lassen - über Folienmaster gebranded und mit schicken bbc_style-Plots direkt in hoher Qualität und in wenigen Schritten. Unabhängig von den Umgebungen und Tools die im Kontext von AI, Machine Learning und Data Science für Datenaufbereitung und Modellierung genutzt werden, liegt ein entscheidender Schritt in der Kommunikation der Ergebnisse an Fachverantwortliche und Entscheidungsträger. Nicht immer besteht die Möglichkeit Ergebnisse über Reportinglösungen in Dashboards anzubieten, oft ist die Erstellung eines Microsoft-Office-Dokuments zur Dokumentation, Kommunikation und Abnahme ein Standard.
 Ausgangspunkt für die Bearbeitung des eigenen Decks ist entweder der firmeneigene Folienmaster oder ein leeres Power-Point-Dokument.
-
-
-![cover](/assets/img/cover.png)
-![slide](/assets/img/slide2.png)
 
 
 ## Vorbereitungen Schritt I: Packages installieren und laden, Daten lesen und aufbereiten
