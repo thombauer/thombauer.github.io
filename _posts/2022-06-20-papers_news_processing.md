@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Update after 30 months of crawling. Using Python for Crawling, Processing and Visualize Data from News Website Headlines.  
-cover-img: /assets/img/srf_head.jpg
+title: Update after 30 months of crawling. Using Python for Crawling, Processing and Visualizing Data from News Website Headlines.  
+cover-img: /assets/img/news_web.jpg
 tags: [data, news, corona, pandemic, swiss, german, python]
 ---
 
 In 2022 I introduced my news crawler and news processing in a [blog post](https://thombauer.github.io/2020-10-15-srf_news_processing/). In the last months I made some improvements I want to describe in this update, including an updated python pipeline, more crawled news website and improved plots. 
 
-Title Image by: <span><a href="https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raphael Schaller</a> on <a href="https://unsplash.com/s/photos/words?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+Title Image by: <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/s/photos/news?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 In the following short introduction to the topic I want to show how easy news headlines can be crawled, present approaches to data preparation and produce some plots showing important news topics and the development throughout the past couple of years. We find some interesting insights from time series and from the comparative approach between websites. Looking back to my original [blog post](https://thombauer.github.io/2020-10-15-srf_news_processing/) I continued the observation of Covid in news headlines and show other important topics incl. the war in Ukraine.
 
-![covid](/assets/img/srf.jpg)
-<span>Photo by <a href="https://unsplash.com/@martinsanchez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Sanchez</a> on <a href="https://unsplash.com/s/photos/news-corona?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> 
+![html](/assets/img/html.jpg)
+Photo by <a href="https://unsplash.com/@jacksonsophat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jackson Sophat</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 ## The Crawler
 
