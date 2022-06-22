@@ -43,7 +43,7 @@ Im Designprozess der Modelle werden jetzt zusätzliche Verantwortlicheiten wahrg
 Wie oben beschrieben kann die Bearbeitung der Matrix mit echten Vertretern aller stakeholder-Gruppen erfolgen oder im Prozess der Diskussion nehmen die Beteiligten jeweils unterschiedliche Rollen ein und stellen ihre Ziele gegenüber. Dabei werden drei ethische Prinzipien thematisiert: Wohlbefinden, Autonomie und Gerechtigkeit. Die stakeholder-Gruppen überlegen, inwiefern sie auf den drei Dimensionen durch Einführung der neuen Technologie betroffen wären. Die Matrix ermöglicht, ohne technisches Verständnis oder Expertise auf dem Feld der Ethik am Designprozess teilzuhaben.
 
 ![aif360](/assets/img/aif_360.jpg)
-Photo by <a href="https://unsplash.com/@deepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">DeepMind</a> on <a href="https://unsplash.com/s/photos/ethic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Abbildung: AIF 360
 
 ## Bias Detection
 
