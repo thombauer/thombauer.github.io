@@ -5,7 +5,7 @@ cover-img: /assets/img/news_web.jpg
 tags: [data, news, corona, pandemic, swiss, german, python]
 ---
 
-In 2022 I introduced my news crawler and news processing in a [blog post](https://thombauer.github.io/2020-10-15-srf_news_processing/). In the last months I made some improvements I want to describe in this update, including an updated python pipeline, more crawled news website and improved plots. 
+In 2020 I introduced my news crawler and news processing in a [blog post](https://thombauer.github.io/2020-10-15-srf_news_processing/). In the last months I made some improvements I want to describe in this update, including an updated python pipeline, more crawled news website and improved plots. 
 
 Title Image by: <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/s/photos/news?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
