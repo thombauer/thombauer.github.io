@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My Data Science journey in 2022. Diging deeper into Development, MLOps and AI Ethics. Improving my skills in Python and R.
+title: My Data Science journey in 2022. Digging deeper into Development, MLOps and AI Ethics. Improving my skills in Python and R.
 cover-img: /assets/img/coding.jpg
-tags: [data science, analytics, python, cem]
+tags: [data science, analytics, python, design thinking]
 ---
 
 Auch dieses Jahr lag der Fokus wieder auf der Verbesserung meiner Programmierskills mit Fokus auf Python, aber auch im R bin ich ein paar Schritte weitergekommen. Die Basis für die Fortschritte bildet weiter DataCamp - hier motivieren kompakte Kurse, Challenges und Projekte zu regelmässigen, kleinen Fortschritten. 2022 bot die Möglichkeit wieder vor Ort an Konferenzen teilzunehmen - vor allem die 9. Swiss Conference on Data Science [SDS2022](https://www.sds2022.ch) in Luzern und Zürich bot viele Möglichkeiten für Austausch und neue Kontakte. Aber auch die Jahrestagung des Instituts für Versicherungswirtschaft an der HSG mit Schwerpunkt KI Ethik [I.VW2022](https://www.ivw.unisg.ch/de/events/save-the-date-i-vw-jahrestagung-ethical-ai-in-der-assekuranz/) brachte viele Einblicke in die Prozesse und Fortschritte führender Versicherungsunternehmen. Daneben konnte ich im Sommer auch endlich selbst wieder vor Ort auf einer internationalen Konferenz zu Machine Learning Themen sprechen. Aber auch innerhalb der Suva boten sich zahlreiche Möglichkeiten zu Analyticsthemen und KI-Ethik zu sprechen. In diesem Blog-Post will ich wie jedes Jahr kurz reflektieren, welche zentralen Entwicklungsschritte ich auf meiner Data Science Reise machen konnte.
