@@ -42,8 +42,11 @@ library(bbplot)
 library(flextable)
 library(rvg)
 library(ggalt)
-#devtools::install_github('bbc/bbplot')
+library(devtools)
+devtools::install_github('bbc/bbplot')
+library(bbplot)
 library(officer)
+library(rvg)
 
 line_df <- gapminder %>% filter(country == 'Malawi')
 line_df
@@ -263,6 +266,7 @@ Als Basis für die Power-Point-Slides können jegliche Folienmaster verwendet we
 
 mydeck <- read_pptx('my_master_start.pptx')
 sz <- slide_size(mydeck)
+layout_summary ( x = mydeck )
 
 mydeck
 ```
