@@ -308,8 +308,6 @@ Der letzte Schritt ist das Befüllen der Power-Point-Datei. Die Funktion read_pp
 ```R
 
 # ------- fitting plots
-mydeck <- read_pptx()
-sz <- slide_size(mydeck)
 
 mydeck <- add_slide(mydeck, layout = "table of contents", master = "Office Theme")
 mydeck <- ph_with(mydeck, value = "Table of Contents", location = ph_location_type(type = "title"))
