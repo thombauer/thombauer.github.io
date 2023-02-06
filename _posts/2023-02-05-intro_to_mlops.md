@@ -110,5 +110,7 @@ Warum ging es lange gut, ML-Modelle zu entwickeln und zu deployen - ohne definie
 
 Zusammenfassend lässt sich sagen, dass die Integration von MLOps in den Entwicklungsprozess von ML-Modellen das Potential hat, die Arbeitsweise vor allem traditioneller Unternehmen im Umfeld ihrer genutzten ML-Modelle zu revolutionieren. Durch die Automatisierung und Standardisierung der Pipeline können Unternehmen ihre Modelle effektiv und effizient auf den Markt bringen. Da die Technologie immer weiter voranschreitet, ist es wichtig, auf dem neuesten Stand zu bleiben und neue Lösungen zu nutzen. Sehen wir MLOps als grosse Chance und bleiben neugierig, wohin es uns führen wird.
 
+Die Basis für diesen Blogeintrag bilden vor allem zwei Forschungspublikationen [Mark Treveil](https://oreilly.de/produkt/mlops-kernkonzepte-im-ueberblick/) und [Sculley et.al.](https://research.google/pubs/pub43146/) und darauf aufbauen einige Kurse auf DataCamp. Ergänzt habe ich das Ganze mit Insights aus meiner praktischen Beschäftigung mit dem Themenkomplex MLOps in den letzten Monaten. Einen guten Einstieg bietet auch [MLOps.org](https://ml-ops.org).
+
 ***Thank you, and have a beautiful day!***
 ***Like to connect? I'm on [linkedin](https://www.linkedin.com/in/thombauer/) ;)***
