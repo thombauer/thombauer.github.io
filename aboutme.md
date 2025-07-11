@@ -4,6 +4,14 @@ title: About me
 subtitle: Data driven decision making
 ---
 
-Hi, my name is Thom, a passionate Data Scientist and Scrum Product Owner specializing in Machine Learning applications and Analytics solutions. Alongside my master's degree in Sociology and Psychology I hold advanced university certificates in applied sciences in the fields of Data and Machine Learning. With over a decade of leadership experience at different levels in Data, IT and Machine Learning, I possess extensive expertise in effectively building and developing high-performing teams within these domains. In my role as programmer and analyst, I have consistently delivered and implemented impactful projects for my clients, accumulating two decades of hands-on experience. My passion for AI starts with generating business value through machine learning applications. I engage with the latest developments and scientific debates in the field, ensuring, that I remain up-to-date with emerging trends. I also prioritize collaborations with companies and research institutions to foster knowledge exchange and drive deployment of AI applications that generate significant business value.
+Hello, I'm Thom — a passionate Data Scientist, experienced Product Owner, and AI/ML Product Manager with a strong focus on Machine Learning applications and data-driven solutions.
+
+With a master’s degree in Sociology and Psychology, complemented by advanced university certifications in Data Science and Machine Learning, I bring a unique interdisciplinary perspective to every project. Over the past two decades, I’ve combined deep technical expertise with strategic leadership, delivering impactful solutions across Data, IT, and ML domains.
+
+My career spans more than 15 years in leadership and Developer roles, where I’ve developed analytical solutions, built and scaled high-performing teams, guided end-to-end ML product development, and consistently delivered business value through data innovation. As a programmer and analyst, I have successfully implemented complex, real-world ML and analytics projects for a wide range of clients. 
+
+In addition to my hands-on experience, I am also passionate about sharing knowledge. I have had the privilege of presenting at congresses and conferences, lecturing in university programs and leading practical training sessions for non-technical professionals.
+
+My passion for AI lies in its potential to solve real business problems. I stay actively engaged with the latest scientific advancements and industry trends, ensuring I remain at the forefront of this rapidly evolving field. I also collaborate closely with companies and research institutions to promote knowledge exchange and accelerate the deployment of AI solutions that make a measurable impact.
   
 Find more information [here](https://thombauer.github.io/resume/)
